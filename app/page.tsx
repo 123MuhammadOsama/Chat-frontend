@@ -21,7 +21,7 @@ type Message = {
 };
 
 const ROOM_ID = 'test-room-id';
-const socket = io('http://localhost:3001');
+const socket = io('https://chat-backend-ten-mu.vercel.app/');
 
 const getFileIcon = (fileName: string | null | undefined) => {
   if (!fileName) return null;
