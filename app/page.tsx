@@ -128,7 +128,7 @@ const ChatApp = () => {
       file: attachedFile ? URL.createObjectURL(attachedFile) : null,
       fileName: attachedFile ? attachedFile.name : null,
       roomId: ROOM_ID,
-      timestamp: DateTime.now().toISO(),  // Add timestamp
+      timestamp: DateTime.now().toISO(),
     };
 
     socket.emit('message', messageData);
